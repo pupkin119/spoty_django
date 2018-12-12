@@ -4,5 +4,5 @@ from . import views
 app_name = 'spoty_controller'
 
 urlpatterns = [
-    path('login/', views.login, name = 'spoty_login'),
+    path('', views.login, name = 'spoty_login'),
 ]

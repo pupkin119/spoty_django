@@ -35,10 +35,9 @@ from django.contrib.auth.tokens import PasswordResetTokenGenerator
 @api_view(['POST'])
 @permission_classes([AllowAny, ])
 def login(request):
-    email = request.data['email']
-    password = request.data['password']
+    json = request.body
 
-    return Response({'error': 0}, status.HTTP_200_OK)
+    return Response(json, status.HTTP_200_OK)
 
 
 
