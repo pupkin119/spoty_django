@@ -1,0 +1,1 @@
+web: gunicorn spoty_django.wsgi --log-file -
